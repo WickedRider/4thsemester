@@ -15,7 +15,7 @@ int main(int argc, char* argv[]) {
 	char c[]="Odd numbers:";
 
 	printf("Number of args# = %d\n",argc);
-	for(i = 0; i < argc; i++){	//Error #1: should be argc-1
+	for(i = 0; i < argc - 1; i++){	//Error #1: should be argc-1
 		n=atoi(argv[i+1]);
 		printf("%d\n",n);
 		numbers[i] = n;

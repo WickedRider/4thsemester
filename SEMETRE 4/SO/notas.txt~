@@ -1,0 +1,10 @@
+Pl1
+	Compile file:
+		odd_numbers.c : gcc -Wall odd_numbers.c -o test
+		odd_numbers.o : gcc -Wall -c odd_numbers.c -o odd_numbers.o
+	
+	Run makefile:
+		make -f FILE
+		
+		
+		
