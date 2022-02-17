@@ -1,12 +1,28 @@
 from sys import stdin, stdout 
 
 class Mat:
-    def __init__(self, arr1, arr2):
-        self.arr1 = arr1
-        self.arr2 = arr2
+    def __init__(self, matrix, angle):
+        self.matrix = matrix
+        self.angle = angle
 
-    def rot(self, matrix):
+    def rot(self, matrix, angle):
 
+
+
+"""
+    1 2 3                   8 5 1
+    5 6 7           ->      9 6 2
+    8 9 10                 10 7 3
+    
+    1 2                     5 3 1
+    3 4             ->      2 4 6
+    5 6               
+
+    1 2 3                   4 1
+    4 5 6           ->      5 2
+                            6 3
+
+"""
 
 
 def readln():
