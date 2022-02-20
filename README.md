@@ -1,2 +1,2 @@
 # 4th-Semester
-4th Semester of Informatics Engeneering Bachelour's Degree
+4th Semester of Informatics Engeneering Bachelours Degree
