@@ -6,10 +6,19 @@ class Mat:
         self.angle = angle
 
     def rot(self, matrix, angle):
+        nColumns = len(matrix)
+        print(nColumns)
+        nLines = len(matrix[0])
+        rotMatrix = [[]]
+"""int largura = matriz.length;
+        int altura = matriz[0].length;
+        int[][] rotMatriz = new int[altura][largura];
+        for(int i=0 ; i<altura;i++){
+            for(int j=0; j<largura;j++){
+                rotMatriz[i][j] = matriz[largura-j-1][i];
+            }
+        }
 
-
-
-"""
     1 2 3                   8 5 1
     5 6 7           ->      9 6 2
     8 9 10                 10 7 3
@@ -21,7 +30,6 @@ class Mat:
     1 2 3                   4 1
     4 5 6           ->      5 2
                             6 3
-
 """
 
 
