@@ -1,28 +1,16 @@
 from datetime import datetime as dt
 from sys import stdin, stdout, exit
 import random as r
-def readln():
-    input = ["0", "1"]
-    input[0] = stdin.readline()
-    input[1] = stdin.readline().strip().split(' ')
-    return input
 
-def outln(n):
-    stdout.write(str(n))
-    stdout.write('\n')
 
 def main():
-    #input = readln()
-    time_begin = dt.now()
-    SIZE = 20000
+    SIZE = 10000
     array = []
-    #checkSize(SIZE, array)
+    array = fill(array, SIZE)
+    time_begin = dt.now()
     final_value = exaustiveSearch(array)
-    outln(str(final_value))
-    
     time_end = dt.now() - time_begin
-    #print("Execution Time: ")
-    #print(time_end)
+    print(time_end)
 
 def fill(arr, num):
     for i in range(num):

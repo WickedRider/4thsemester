@@ -13,10 +13,11 @@ def outln(n):
     stdout.write('\n')
 
 def main():
-    input = readln()
+    #input = readln()
+    array = []
+    SIZE = 150000
+    array = fill(array, SIZE)
     time_begin = dt.now()
-    array = input[1]
-    SIZE = len(array)
     array = sorted(array)
     valor_final = improved1(array, SIZE)
     print(valor_final)
@@ -24,6 +25,11 @@ def main():
     print("Execution Time: ")
     print(time_end)
 
+def fill(arr, num):
+    for i in range(num):
+        arr.append(r.randint(0, 100000))
+    
+    return arr
 
 def checkSize(size, arr):
     for i in arr:
