@@ -27,6 +27,7 @@ def main():
 
 
 
+
 def checkSize(size, arr):
     for i in arr:
         if(int(i) > 1000000 or int(i) < 0):
